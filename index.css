@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .post{
+        @apply bg-post p-4 flex flex-wrap;
+    }
+
+    .post > h2 {
+        @apply text-white w-full text-2xl font-bold p-4;
+    }
+
+    .post > img{
+        @apply w-200 items-start p-4;
+    }
+
+    .post > .post-content{
+        @apply text-white p-4 ml-auto bg-post-text w-9/12 h-fit;
+    }
+}
